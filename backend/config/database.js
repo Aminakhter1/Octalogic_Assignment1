@@ -3,6 +3,7 @@ import { Sequelize } from 'sequelize';
 const sequelize = new Sequelize('freedb_myOctalogic', 'freedb_octalogic-user', '5z5mRyU2&%A%ZdF', {
   host: 'sql.freedb.tech',
   dialect: 'mysql',
+   dialectModule: require('mysql2'),
   port: 3306, // ensure port is a number, not a string
   logging: false,
   dialectOptions: {
